@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&display=swap");
+
+body {
+  background: radial-gradient(at top, #feffff, #a7cecc);
+}
+
+.container {
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+
+  font-family: "Indie Flower", cursive, sans-serif;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.photo {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.name {
+  font-family: "Fredoka One", cursive, sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #361609;
+  text-shadow: 2px 5px 1em yellow;
+}
+
+.position {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-shadow: 2px -5px 0.5em blue;
+}
+
+.main {
+  margin-bottom: 10px;
+  border-top: thick double #361609;
+  border-bottom: thick double #361609;
+}
+
+.aboutMe,
+.aboutStudies {
+  margin: auto;
+  width: 90%;
+  max-width: 300px;
+}
+
+.block {
+  margin: 10px;
+
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px #361609, inset 0px 0px 25px 0px grey;
+}
+
+.title {
+  margin: 0 0 10px 0;
+  font-family: "Fredoka One", cursive, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #361609;
+  text-decoration: underline;
+}
+
+.text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.text span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #361609;
+  text-shadow: 0px -2px 0.5em yellow, 0px 2px 0.5em blue;
+}
+
+.list {
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.item {
+  margin-bottom: 3px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  color: #361609;
+}
+
+.link:hover,
+.link:focus {
+  text-shadow: 0px -5px 0.5em yellow, 0px 5px 0.5em blue;
+}
+
+.certificate {
+  width: 80px;
+}
+
+.listContacts {
+  display: none;
+}
+
+.listContacts .imgContacts {
+  width: 15px;
+}
+
+.footer {
+  padding: 10px 0 20px 0;
+}
+
+.listFooter {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemFooter:not(:last-child) {
+  margin-right: 20px;
+}
+
+.imgContacts {
+  width: 20px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.imgContacts:hover,
+.imgContacts:focus {
+  box-shadow: 0px -5px 0.2em yellow, 0px 5px 0.2em blue;
+}
+
+/* FOR TABLET */
+
+@media screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo {
+    width: 150px;
+    border-radius: 17% 5px 5px 17%;
+    margin-right: 20px;
+  }
+
+  .name {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+
+  .position {
+    letter-spacing: 2px;
+    word-spacing: 3px;
+  }
+
+  .main {
+    margin-bottom: 10px;
+    border-top: thick double #361609;
+    border-bottom: thick double #361609;
+  }
+
+  .aboutMe,
+  .aboutStudies {
+    width: 75%;
+    max-width: 500px;
+  }
+
+  .block {
+    padding: 10px 15px;
+  }
+
+  .title {
+    font-size: 18px;
+    word-spacing: 1px;
+  }
+
+  .text {
+    font-size: 16px;
+    word-spacing: 1px;
+  }
+
+  .text span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #361609;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+
+  .certificate {
+    width: 90px;
+  }
+
+  .listContacts {
+    display: block;
+    position: fixed;
+    top: 30%;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .listContacts .imgContacts {
+    width: 20px;
+  }
+
+  .itemFooter:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .imgContacts {
+    width: 30px;
+    padding: 2px;
+    border-radius: 8px;
+  }
+}
+
+/* FOR DESCTOP */
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .photo {
+    width: 200px;
+    border-radius: 17% 5% 5% 17%;
+    margin-right: 25px;
+  }
+
+  .name {
+    font-size: 40px;
+    word-spacing: 3px;
+  }
+
+  .position {
+    font-size: 25px;
+  }
+
+  .main {
+    margin-bottom: 10px;
+    padding: 15px 5px;
+    border-top: thick double #361609;
+    border-bottom: thick double #361609;
+  }
+
+  .aboutMe,
+  .aboutStudies {
+    margin: 15px auto;
+    width: 95%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .block {
+    padding: 5px 15px;
+    margin: 15px;
+  }
+
+  .title {
+    font-size: 22px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+  }
+
+  .text {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+
+  .text span {
+    font-weight: bold;
+    font-size: 20px;
+    color: #361609;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+
+  .certificate {
+    width: 100px;
+  }
+
+  .listContacts {
+    top: 40%;
+  }
+
+  .listContacts .imgContacts {
+    width: 25px;
+  }
+
+  .itemFooter:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .imgContacts {
+    width: 40px;
+    padding: 2px;
+    border-radius: 10px;
+  }
+}
